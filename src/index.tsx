@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from 'pages/Home';
+import PageRoutes from 'router/PageRoutes';
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -9,6 +9,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <Home />
+    <PageRoutes />
   </React.StrictMode>
 );
