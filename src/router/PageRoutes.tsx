@@ -3,13 +3,17 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HomePage from "pages/HomePage";
 import LoginPage from "pages/LoginPage";
+import { User } from "types/types";
 
 const PageRoutes: React.FC = () => {
+    const handleLoginFormSubmit = (formData: User) => {
+    }
+
     return (
         <Router>
             <Routes>
                 <Route path="/" element={ <HomePage /> } />
-                <Route path="/login" element={ <LoginPage /> } />
+                <Route path="/login" element={ <LoginPage onSubmit={ handleLoginFormSubmit } /> } />
             </Routes>
         </Router>
     );

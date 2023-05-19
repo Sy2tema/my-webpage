@@ -13,7 +13,6 @@ const LoginPage: React.FC<LoginPageProps> = (props: LoginPageProps) => {
 
   return (
     <div>
-      <h1>로그인 페이지 입니다.</h1>
       <Login onSubmit={ handleLoginSubmit } />
     </div>
   );
